@@ -6,3 +6,9 @@
 <input type="text" #box (keyup.enter)="myEvent(box.value)">
 <br><input type="text" #box (keyup.space)="myEvent(box.value)"> <br>
 <input type="text" #box (blur)="myEvent('blur event')">
+<br> <br>
+
+<input type="text" #box>
+<button (click)="getVal(box.value)" >Get Value</button>
+
+<h2>ssss{{box.value}}</h2>
