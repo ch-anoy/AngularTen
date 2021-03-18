@@ -1,2 +1,8 @@
 <p>login works!</p>
 <button (click)="getName('Anoy')">Get my name</button>
+<button (click)="myEvent('this is a click event')">click me</button>
+<br> <br>
+<input type="text" #box (keyup)="myEvent(box.value)"> <br>
+<input type="text" #box (keyup.enter)="myEvent(box.value)">
+<br><input type="text" #box (keyup.space)="myEvent(box.value)"> <br>
+<input type="text" #box (blur)="myEvent('blur event')">

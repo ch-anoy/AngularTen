@@ -14,5 +14,8 @@ export class LoginComponent implements OnInit {
   getName(name: any){
     alert(name)
   }
+  myEvent(evt: any){
+    console.warn(evt)
+  }
 
 }
