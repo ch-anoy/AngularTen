@@ -8,7 +8,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 export class LoginComponent implements OnInit {
 
   currentVal="";
-
+  name="anoy"
+  disabledBox=true;
   constructor() { }
 
   ngOnInit(): void {
@@ -23,6 +24,9 @@ export class LoginComponent implements OnInit {
   getVal(val: any){
     
     console.log("sd",val)
+  }
+  enableBox(){
+      this.disabledBox=false;
   }
 
 
