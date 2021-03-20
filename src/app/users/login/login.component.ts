@@ -10,9 +10,12 @@ export class LoginComponent implements OnInit {
   currentVal="";
   name="anoy"
   disabledBox=true;
+  show=true;
+  color="red";
   constructor() { }
 
   ngOnInit(): void {
+    
   }
   getName(name: any){
     alert(name)
